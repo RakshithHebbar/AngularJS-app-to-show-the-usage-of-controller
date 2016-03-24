@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Usage of controllers</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+</head>
+<body>
+<div ng-app="name" ng-controller="mainctrl">
+	FirstName:<input type="text" ng-model="firstname"><br>
+	Lastname:<input type="text" ng-model="Lastname"><br>
+	<p> {{firstname +" " +Lastname}} </p>
+    <script>
+    var app= angular.module('name',[])
+    app.controller('mainctrl',function($scope)
+    {
+    	$scope.firstname="rakshith";
+    	$scope.Lastname="Hebbar";
+    });
+    </script>
+</div>
+   
+
+</body>
+</html>
